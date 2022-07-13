@@ -1,2 +1,0 @@
-# projectDjangoUno
-proyecto de django
