@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block titulo %} api {% endblock %}
+
+{% block contenido %}
+
+<form class="form col-8" action="api" method="post">
+    {% csrf_token %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th class="col">RUT</th>
+                <th>guardar</th>
+                <th>recargar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col"> <input class="form-control " type="text" id="nombre" readonly value="{{ first }}"></td>
+                <td class="col"> <input class="form-control " type="text" id="apellido" readonly value="{{last}}"></td>
+                <td class="col"> <input class="form-control " type="text" id="rut" placeholder="Ingrese RUT" required></td>
+                <td class=""> 
+                    <input class="btn btn-success " type="submit" value="Guardar" onclick="">
+                </td>
+                <td class=""> 
+                    <input class="btn btn-primary " type="button" value="Otro" onclick="recargar()">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</form>
+
+{% endblock %}
+
