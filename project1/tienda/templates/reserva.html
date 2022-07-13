@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block titulo %} Index {% endblock %}
+
+{% block contenido %} 
+
+<form class="form-group col-md-4" >
+    {% csrf_token %}
+                                        
+    <label></label>
+    <input type="text" class="form-control" id="txtNombre" placeholder="Nombre mascota" width= "100px">   <br>
+    <label>A Domicilio:</label>
+ 
+    
+    <br>
+    <input type="radio"  id="txtopc" name="ad1"> <label> SI</label>
+    
+    
+     <br>
+     <input type="radio"  id="txtopc" name="ad1"> <label> NO</label>
+     <br>
+    <label></label>    
+ 
+    <input type="text" class="form-control" id="txtdir" placeholder="Direccion">  
+    <label></label>
+    <input type="number" class="form-control" id="txtTel" placeholder="Telefono"> 
+    <label></label>
+    <input type="date" class="form-control" id="txtTel" placeholder="fecha"> 
+    <label></label>
+    <textarea type="text" style="height: 150px; resize: none;" class="form-control" id="txtObs" placeholder="Observacion"></textarea>
+    <input class="btn btn-primary m-3" type="button" value="Enviar" style="width: 25%;" onclick="" >
+
+
+          
+</form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block titulo %} Index {% endblock %}
+
+{% block contenido %} 
+
+<form class="" style="margin-left:0%;margin-right: 0%;margin-top:1%; ">
+    <label>Seleccione aqui el tipo de atencion que necesita</label>
+    <div class=" form-group col-md-5">                            
+        <select class="form-select">
+            <option>peluqueria</option>
+            <option>baño</option>
+            <option>vacunas</option>
+            <option>atencion medica</option>
+            <option>venta de alimentos</option>
+        </select>         
+      
+    </div>     
+ <br>
+    <div class="" >   <input type="button" class="btn btn-primary" onclick="continuar()" value="Continuar" style="margin-right: 20%;"></div> 
+</form> 
+
+{% endblock %}
